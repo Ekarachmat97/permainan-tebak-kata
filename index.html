@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu - Game Susun Kata</title>
+    <link rel="stylesheet" href="public/css/menu.css">
+</head>
+<body>
+
+ <div id="splash-screen">
+        <h1>Seccastudio</h1>
+    </div>
+    
+    <div id="main-menu" class="menu-container">
+        <h1 class="menu-title">Susun Kata</h1>
+        <div class="menu-buttons">
+            <button id="play-button" class="menu-button">Main</button>
+            <button id="settings-button" class="menu-button">Pengaturan</button>
+            <button id="exit-button" class="menu-button">Keluar</button>
+        </div>
+    </div>
+
+    <!-- Modal Pengaturan -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <h2>Pengaturan</h2>
+            <p>Volume Musik: <input type="range" id="volume-slider" min="0" max="100" value="50"></p>
+            <p>Efek Suara: <input type="range" id="sound-slider" min="0" max="100" value="50"></p>
+            <button id="close-settings" class="menu-button">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Elemen Audio -->
+
+          <audio id="background-music" autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+      </audio>
+      
+
+    <script src="public/js/menu.js"></script>
+
+</body>
+</html>
