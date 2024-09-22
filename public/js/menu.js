@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 
 // Tombol 'Main' untuk memulai permainan
 playButton.addEventListener('click', () => {
-    window.location.href = '../pages/game.html'; // Redirect ke halaman game utama
+    window.location.href = '../public/pages/game.html'; // Redirect ke halaman game utama
 });
 
 // Tombol 'Pengaturan' untuk membuka modal pengaturan
